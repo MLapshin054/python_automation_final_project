@@ -75,7 +75,7 @@ class OperationsHelper(BasePage):
         else:
             element_name = locator
         try:
-            value = self.get_element_property(locator, testdata["find_value"], time=5)
+            value = self.get_element_property(locator, testdata["find_value"])
             if value is None:
                 logging.error(f"Value not found for {element_name}")
             else:
@@ -103,5 +103,5 @@ class OperationsHelper(BasePage):
     def get_about_title(self):
         return self.get_text_from_element(SearchLocators.ids["LOCATOR_ABOUT_TITLE"], description="about title")
 
-    def get_value(self):
+    def get_about_value(self):
         return self.get_value_from_field(SearchLocators.ids["LOCATOR_ABOUT_TITLE"], description="value")
