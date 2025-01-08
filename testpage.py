@@ -96,6 +96,9 @@ class OperationsHelper(BasePage):
     def click_login_button(self):
         self.click_button(SearchLocators.ids["LOCATOR_LOGIN_BTN"], description="login")
 
+    def click_about_button(self):
+        self.click_button(SearchLocators.ids["LOCATOR_ABOUT_LINK"], description="about")
+
     # GET
     def get_user_name(self):
         return self.get_text_from_element(SearchLocators.ids["LOCATOR_HELLO_FIELD"], description="username")
