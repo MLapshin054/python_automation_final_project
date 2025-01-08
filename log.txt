@@ -1,0 +1,6 @@
+2025-01-08 15-27-55 INFO ====== WebDriver manager ======
+2025-01-08 15-27-55 INFO Get LATEST chromedriver version for google-chrome
+2025-01-08 15-27-55 INFO Get LATEST chromedriver version for google-chrome
+2025-01-08 15-27-55 INFO Driver [/home/urban/.wdm/drivers/chromedriver/linux64/131.0.6778.264/chromedriver-linux64/chromedriver] found in cache
+2025-01-08 15-27-57 INFO Test 1 Starting...
+2025-01-08 15-28-13 INFO Test 1 completed
