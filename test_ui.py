@@ -36,4 +36,3 @@ class TestUI:
         testpage = OperationsHelper(browser)
         assert testpage.get_about_value() == testdata["about_value"]
         logging.info("Test 3 Completed")
-
