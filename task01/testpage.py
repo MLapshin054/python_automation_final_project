@@ -4,13 +4,13 @@ import yaml
 from BaseApp import BasePage
 from selenium.webdriver.common.by import By
 
-with open("./testdata.yaml") as f:
+with open("testdata.yaml") as f:
     testdata = yaml.safe_load(f)
 
 
 class SearchLocators:
     ids = dict()
-    with open("./locators.yaml") as f:
+    with open("locators.yaml") as f:
         locators = yaml.safe_load(f)
         for locator in locators["xpath"].keys():
             ids[locator] = (By.XPATH, locators["xpath"][locator])

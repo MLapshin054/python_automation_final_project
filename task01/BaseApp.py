@@ -4,7 +4,7 @@ import yaml
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-with open("./testdata.yaml") as f:
+with open("testdata.yaml") as f:
     testdata = yaml.safe_load(f)
 
 
