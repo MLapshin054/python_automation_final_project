@@ -20,6 +20,7 @@ class TestUI:
         testpage.enter_login(name)
         testpage.enter_password(password)
         testpage.click_login_button()
+        time.sleep(testdata["wait"])
         assert testpage.get_user_name() == f'Hello, {name}'
         logging.info("Test 1 Completed")
 
